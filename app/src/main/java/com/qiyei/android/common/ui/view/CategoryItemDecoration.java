@@ -1,4 +1,4 @@
-package com.qiyei.android.common.view;
+package com.qiyei.android.common.ui.view;
 
 import android.graphics.Canvas;
 import android.graphics.Rect;

@@ -14,7 +14,7 @@ import com.qiyei.android.common.entity.MainMenu
 import com.qiyei.android.common.listener.OnItemClickListener
 import com.qiyei.android.common.ui.adapter.MainMenuAdapter
 import com.qiyei.android.common.ui.viewmodel.MainMenuViewModel
-import com.qiyei.android.common.view.CategoryItemDecoration
+import com.qiyei.android.common.ui.view.CategoryItemDecoration
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
