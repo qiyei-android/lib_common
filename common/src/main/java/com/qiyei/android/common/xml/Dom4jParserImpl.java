@@ -1,9 +1,5 @@
 package com.qiyei.android.common.xml;
 
-import android.util.Log;
-
-
-
 import org.dom4j.Attribute;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -63,13 +59,11 @@ public class Dom4jParserImpl implements IXmlParser{
             return;
         }
         listener.onAttributeStart(root.getName());
-        Log.i(TAG,prefix +"name:" + root.getName());
         //获取所有的属性
         List<Attribute> attrs = root.attributes();
         if (attrs != null && attrs.size() > 0){
             for (Attribute attribute : attrs){
                 listener.onAttribute(root.getName(),attribute.getName(),attribute.getValue());
-                Log.i(TAG,"attribute name:" + attribute.getName() + " value:" + attribute.getValue());
             }
         }
         listener.onAttributeEnd(root.getName());
